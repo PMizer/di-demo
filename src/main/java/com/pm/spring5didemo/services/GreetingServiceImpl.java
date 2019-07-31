@@ -9,7 +9,7 @@ public class GreetingServiceImpl implements GreetingService {
 
 
     @Override
-    public String sayGreeting(){
+    public String sayGreeting() {
         return HELLO_GURUS;
     }
 }
