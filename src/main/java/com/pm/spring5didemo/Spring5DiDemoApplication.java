@@ -2,6 +2,7 @@ package com.pm.spring5didemo;
 
 import com.pm.spring5didemo.controllers.MyController;
 import com.pm.spring5didemo.examplebeans.FakeDataSource;
+import com.pm.spring5didemo.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,6 +18,9 @@ public class Spring5DiDemoApplication {
         FakeDataSource fakeDataSource = (FakeDataSource)ctx.getBean(FakeDataSource.class);
 
         System.out.println(fakeDataSource.getUser());
+
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker)ctx.getBean(FakeJmsBroker.class);
+        System.out.println(fakeJmsBroker.getUsername());
 
     }
 }
